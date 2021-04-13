@@ -1,7 +1,7 @@
 # web-development-projects
 This is the project that i make during my learning of javascript From Code with Harry 
 First porject is library Management System :
-In this project you can manipulate your book by thier
+In this project you can manipulate your books by thier
               Book Name
               Author Name
               Type of Book
