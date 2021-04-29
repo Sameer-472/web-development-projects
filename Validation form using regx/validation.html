@@ -16,19 +16,33 @@
     background-image: url("https://images.unsplash.com/photo-1579762492894-01b8232f7d45?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80");
     background-size: cover;
   }
-  small{
+
+  small {
     color: red;
   }
-  
-  .valid-feedback{
+
+  .valid-feedback {
     color: red;
+  }
+  div#failure{
+    top: 0%;
   }
 </style>
 
 <body>
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  <div id="alert">
+    <!-- <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+      <strong>Success!</strong> Your travel request has been successfully submitted
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+      <strong>Error!</strong> Your travel request has not been sent due to errors
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div> -->
   </div>
   <div class="container" style="margin-top: 200px;">
     <h1>Kumrat Travel and Tours</h1>
@@ -51,9 +65,9 @@
       </div><br>
       <div class="col-md-4 position-relative">
         <label for="validationTooltipUsername" class="form-label">Email address</label>
-           <input type="text" class="form-control" id="email" value="" required>
-          <small id="namevalid" class="form-text text-muted invalid-feedback" >
-            invalid Email address </small>    
+        <input type="text" class="form-control" id="email" value="" required>
+        <small id="namevalid" class="form-text text-muted invalid-feedback">
+          invalid Email address </small>
       </div>
       <div class="col-md-6 position-relative">
         <label for="validationTooltip03" class="form-label">City</label>
@@ -77,10 +91,9 @@
         <input type="text" class="form-control" id="phone" required>
         <small id="namevalid" class="form-text text-muted invalid-feedback">
           Phone no should be 11 digit long</small>
-
       </div>
       <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class="btn btn-primary" id="sumbit" type="submit">Submit form</button>
       </div>
     </form>
   </div>
